@@ -39,6 +39,10 @@ public class Logger {
         System.out.println("[WARN]" + logStructure + msg);
     }
 
+    public void error(Logger this, String msg){
+        System.out.println("[ERROR]" + logStructure + msg);
+    }
+
     public void debug(Logger this, String msg){
         System.out.println("[DEBUG]" + logStructure + msg);
     }
