@@ -1,15 +1,16 @@
 package eu.macioszektv;
 
 public class Logger {
-    private String projectName;
-    private String className;
 
     public Logger(String projectName, String className){
         this.projectName = projectName;
         this.className = className;
+        this.logStructure = " [" + projectName + "] " + "[" + className + "] ";
     }
 
-    private String logStructure = " [" + projectName + "] " + "[" + className + "] ";
+    private String projectName;
+    private String className;
+    private String logStructure;
 
     public String getProjectName(Logger this){
         return(this.projectName);
